@@ -7,7 +7,7 @@ def get_requirements() -> list[str]:
 
 
 setup(
-    name='table-transformer',
+    name='table_transformer',
     version='0.1',
     description='Convert the tables at image to the structure tables',
     packages=['detr', 'src', 'scripts'],  # find_packages(),
@@ -15,5 +15,9 @@ setup(
     zip_safe=False,
     install_requires=get_requirements(),#.extend('git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi'),
     python_requires='>=3.8',
-    package_dir={'table-transformer': 'table-transformer'},
+    package_dir={
+        'detr': 'detr',
+        'src': 'src',
+        'scripts': 'scripts',
+    },
 )
