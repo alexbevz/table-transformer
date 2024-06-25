@@ -7,12 +7,13 @@ def get_requirements() -> list[str]:
 
 
 setup(
-    name='table-converter',
+    name='tabcon',
     version='0.1',
     description='Convert the tables at image to the structure tables',
-    packages=['detr', 'src', 'scripts'],#find_packages(),
+    packages=['detr', 'src', 'scripts'],  # find_packages(),
     author_email='as-bivz@yandex.ru',
     zip_safe=False,
     install_requires=get_requirements().extend('git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi'),
-    python_requires='>=3.8'
+    python_requires='>=3.8',
+    package_dir={'tabcon': 'tabcon'},
 )
