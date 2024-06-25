@@ -1,9 +1,9 @@
-Cython>=3.0.10
-pycocotools>=2.0.8
-submitit>=1.5.1
-torch>=1.5.0
-torchvision>=0.6.0
+Cython
+pycocotools
+submitit
+torch
+torchvision
 git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi
-scipy>=1.14.0
-onnx>=1.16.1
-onnxruntime>=1.18.0
+scipy
+onnx
+onnxruntime
