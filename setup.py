@@ -7,7 +7,7 @@ def get_requirements() -> list[str]:
 
 
 setup(
-    name='table_transformer',
+    name='table-converter',
     version='0.1',
     description='Convert the tables at image to the structure tables',
     packages=['detr', 'src', 'scripts'],  # find_packages(),
